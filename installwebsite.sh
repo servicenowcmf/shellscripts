@@ -16,5 +16,6 @@ sudo mv ~/website/css /var/www/html
 sudo mv ~/website/img /var/www/html
 #change the folder to the webserver directory
 cd /var/www/html 
+echo "the web page files have been copied to the html folder"
 #restart the webserver",
 sudo systemctl start apache2.service
