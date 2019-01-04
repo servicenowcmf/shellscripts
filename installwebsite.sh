@@ -11,7 +11,9 @@ sudo chmod 777 /var/www/html/
 #download website files from git repository
 sudo git clone https://github.com/servicenowcmf/website
 #copy the downloaded content to the Apache www directory
-sudo mv -v ~/website/* /var/www/html/
+sudo mv ~/website/*.* /var/www/html
+sudo mv ~/website/css /var/www/html
+sudo mv ~/website/img /var/www/html
 #change the folder to the webserver directory
 cd /var/www/html 
 #restart the webserver",
