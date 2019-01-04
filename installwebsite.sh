@@ -11,11 +11,8 @@ sudo chmod 777 var/www/html/
 #download website files from git repository
 sudo git clone https://github.com/servicenowcmf/website
 #copy the downloaded content to the Apache www directory
-#sudo mv ~/website/*.* /var/www/html
-#sudo mv ~/website/css /var/www/html
-#sudo mv ~/website/img /var/www/html
-#change the folder to the webserver directory
-#cd ~ 
-#echo "the web page files have been copied to the html folder" >> scriptstatus.txt
+mv /website/*.* /var/www/html
+mv /website/css /var/www/html
+mv /website/img /var/www/html
 #restart the webserver",
 sudo systemctl start apache2.service
