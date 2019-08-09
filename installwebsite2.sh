@@ -1,4 +1,4 @@
-ggit#!/bin/sh -e
+#!/bin/sh -e
 #install Apache Web Server on Ubuntu 16 LTS
 #update repositories on server
 sudo apt-get -y update
@@ -14,5 +14,5 @@ sudo git clone https://github.com/servicenowcmf/website2
 mv /website2/*.* /var/www/html
 mv /website2/css /var/www/html
 mv /website2/img /var/www/html
-#restart the webserver",
+#restart the webserver
 sudo systemctl start apache2.service
