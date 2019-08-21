@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash
 #install Apache Web Server on Ubuntu 16 LTS
 #update repositories on server
 sudo apt-get -y update
